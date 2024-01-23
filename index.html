@@ -1,76 +1,80 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Gateau chocolat</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="gateau_css.css">
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traore Mamadou</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial;
+        }
+        div.cover{
+            background : url("cover_overlay.png") no-repeat center/100% 100%,url(cover.jpg) no-repeat center/cover;
+            height: 360px;
+            position: relative;
+        }
+        img.cover_profile{
+            height: 100px;
+            position: relative;
+            left: 50%;
+            margin-left: -50px;
+            margin-top: 50px;
+            
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+        div.cover p{
+            color: lightgray;
+            text-align: center;
+        }
+        div.cover_contact{
+          /*background-color: #FF000080;*/
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          border-left: 4px solid #D89584;
+          padding-left: 8px;
+        }
+        div.cover_contact p{
+            text-align: left;
+        }
+        div.cover_contact a{
+            color: white;
+            font-size: 14px;
+        }
+        a{
+            color: #D89584;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p.contacter{
+            position: absolute;
+            left: 50%;
+            margin-left: -75px;
+            top: 75%;
+            border: 2PX solid #D89584;;
+            padding: 8px 14px;
+            background-color: #000000C0;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: bold;
 
-    </head>
-
-    <body>
-        
-        
-        <div class="contenue">
-            <div class="categorie">
-                <p class="categorie">Recette</p>
-            </div>
-
-            <h1>Gateau au chocolat</h1>
-            <div class="separateur"></div>
-
-            <div class="description">
-                <p class="description">"Cette recette facile du gateau au chocolat est un grand classique qui fera plaisir à vos enfants."</p>
-            </div>
-            <div class="info">
-                <img class="center info"  src="gateau.jpg">
-                
-                <table class="info">
-                    <tr>
-                        <th class="info">Difficulté</th>
-                        <th class="info">Préparation</th>
-                        <th class="info">Cuisson</th>
-                        <th class="info">Temps Total</th>
-                    </tr>
-                    <tr>
-                        <td>Facile</td>
-                        <td>10 mn</td>
-                        <td>25 mn</td>
-                        <td>35 mn</td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <div class="colone1">
-                    <h2>Ingrédient</h2>
-                    <div class="ul">
-                        <p>chocolat noir : 200g</p>
-                        <p>Sucre : 150g</p>
-                        <p>Beure : 200g</p>
-                        <p>Oeufs : 4</p>
-                        <p>Farine : 80g</p>
-                    </div>
-                </div>
-                <div class="colone2">
-                    <h2>Préparation</h2>
-
-                    <table class="preparation">
-                        <tr>
-                            <td class="numero"><p>1</p></td><td class="preparation_etape">Faire fondre le chocolat avec le beurre</td>
-                        </tr>
-                        <tr> 
-                            <td class="numero"><p>2</p></td><td class="preparation_etape">Mélanger le sucre, les oeufs et la farine</td>
-                        </tr>
-                        <tr>
-                            <td class="numero"><p>3</p></td><td class="preparation_etape">Mélanger le tout pour faire une pate</td>
-                        </tr>
-                        <tr>
-                            <td class="numero"><p>4</p></td><td class="preparation_etape">Mettre au four</td>
-                        </tr>
-                        
-                    </table>
-                </div>
-            </div>
+        }
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <img class="cover_profile" src="profile-trans.png">
+        <h1>Traoré Mamadou</h1>
+        <p>Développeur Freelance | 1 ans d'expérience</p>
+        <div class="cover_contact">
+            <p><a href="mailto:mamadou.traore84@gmail.com?subject=Contact%20depuis%20Mamadou">mamadou.traore84@gmail.com</a></p>
+            <p><a href="tel:+22378358110">00 223 78 35 81 10</a></p>
         </div>
-    </body>
+        <p class="contacter"><a href="mailto:mamadou.traore84@gmail.com?subject=Contact%20depuis%20Mamadou">Me contacter</a></p>
+    </div>
+</body>
 </html>
