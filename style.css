@@ -1,0 +1,345 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --color1: #D89584;
+    --color2: #F4F4F4;
+    --color3: #979797;
+}
+body{
+    margin: 0;
+    font-family: Arial;
+    line-height: 1.5;
+}
+div.cover{
+    background : url("cover_overlay.png") no-repeat center/100% 100%,url(cover.jpg) no-repeat center/cover;
+    height: 360px;
+    position: relative;
+}
+img.cover_profile{
+    height: 100px;
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 50px;
+   
+    
+}
+h1.page1{
+    color: white;
+    text-align: center;
+    font-size: 42px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+div.cover p{
+    color: lightgray;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+}
+div.cover_contact{
+  /*background-color: #FF000080;*/
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  border-left: 4px solid var(--color1);
+  padding-left: 8px;
+}
+div.cover_contact p{
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0px;
+    
+}
+
+div.cover_contact p:first-child{
+    margin-bottom: 14px;
+}
+
+div.cover_contact a{
+    color: white;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a.contact_bouton{
+    color: var(--color1);
+    border: 3px solid var(--color1);
+    padding: 8px 20px;
+    text-decoration: none;
+    background-color: #00000040;
+    font-size: 14px;
+    margin-top: 18px;
+}
+a.contact_bouton-portfolio{
+    position: absolute; 
+    right: 20px; 
+    top:5px;
+}
+
+a.contact_bouton:hover{
+    color: white;
+    border: 3px solid white;
+}
+.section{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: auto;
+}
+div.section-grise1{
+    background: url(triangle2white.svg) no-repeat center bottom -1px/100% ;
+    background-color: var(--color2);
+    padding-bottom: 70px;
+    text-align: center;
+    font-size: 22px;
+   
+}
+div.section-grise2{
+    background: url(triangle1white.svg) no-repeat center top/100%;
+    background-color: var(--color2);
+    
+    padding-top: 100px;
+   
+}
+
+h2.page1{
+    text-align: center;
+    font-size: 34px;
+    margin-top: 0px;
+}
+div.separateur{
+    background-color: var(--color3);
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
+div.section-grise1 p{
+    color: #656565;
+    max-width: 450px;
+    display: inline-block;
+   
+}
+div.ligne_vertical{
+    width: 4px;
+    height: 150px;
+    background-color: var(--color1);
+}
+/*
+table.en_savoir p{
+    margin: 0;
+    
+}
+
+table.en_savoir div{
+    max-height: 50px;
+    margin-bottom: 80%;
+}
+table.en_savoir tr{
+    vertical-align: top;
+}
+
+td.deux{
+    padding-left:8px;
+    box-sizing: border-box;
+}
+*/
+
+img.col-contenue{
+    width: 40%;
+}
+div.col-contenue{
+    width: 60%;
+    padding-left: 16px;
+}
+.float-right{
+    float: right;
+}
+
+
+
+div.text-avec-ligne-vertical{
+    border-left:3px solid var(--color1);
+    padding-left: 8px;
+    height: 50px;
+    display: inline-block;
+    margin-top: 0;
+}
+
+div.barr-vertiacle{
+    height: 50px;
+    width: 4px;
+    background-color: var(--color1);
+    margin-right: 8px;
+}
+.col-protfolio{
+    width: 47%; 
+}
+
+
+div.frame{
+    padding: 30px 50px;
+    background-color: white;
+    box-shadow: 0px 0px 8px 8px rgb(0,0,0,0.1);
+}
+table.parlon-project{
+    width: 100%;
+    
+}
+
+
+h1.page2{
+
+    text-align: center;
+    font-size: 46px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: 1;
+}
+h2.page2{
+    font-size: 26px;
+    font-weight: normal;
+    margin-top: 6px;
+    text-align: center;
+}
+a.retour{
+    font-size: 15px;
+    color: var(--color1);
+    display: block;
+    text-align: left;
+}
+img.img-portfolio{
+    width:70%;
+    max-width: 550px;
+}
+iframe.contact{
+    width: 100%;
+    border: none;
+    height: 400px;
+
+    
+}
+div.portfolio-header{
+    height: 90px;
+    background: url(header.jpg) no-repeat center/cover;
+    position: relative;
+}
+div.frame img{
+    width: 100px;
+}
+p.title{
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    padding-top: 4px;
+    padding-left: 8px;
+    margin-top: 0;
+}
+.display-mobile{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+   
+    img.cover_profile{
+        height: 90px;
+        margin-top: 75px;
+       
+        
+    }
+    h1.page1{
+
+        font-size: 38px;
+        margin-top: 6px;
+
+    }
+    div.cover p{
+        margin-top: 2px;
+        font-size: 13px;
+  }
+  .section{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+div.section-grise1{
+
+    padding-bottom: 40px;
+}
+h2.page1{
+
+    font-size: 30px;
+
+}
+img.col-contenue{
+    width: 100%;
+}
+div.col-contenue{
+    width: 100%;
+    padding-left: 0px;
+}
+.col-protfolio{
+    width: 100%;
+    margin-bottom: 20px;
+}
+div.section-grise2{
+    padding-top: 30px;
+   
+}
+div.frame{
+    padding: 0;
+    box-shadow:none;
+}
+iframe.contact{
+    border: none;
+    height: 280px;
+
+    
+}
+div.frame img{
+   width: 70px;
+}
+div.parlon-project{
+    padding-top: 0;
+}
+
+p.title{
+    font-size: 18px;
+
+    padding-top: 10px;
+    padding-left: 4px;
+
+}
+
+a.contact_bouton{
+    padding: 7px 12px;
+    font-size: 12px;
+    margin-top: 22px;
+}
+a.contact_bouton-portfolio{
+    right: 8px; 
+}
+
+h1.page2{
+
+
+    font-size: 40px;
+
+}
+h2.page2{
+    font-size: 26px;
+    font-weight: normal;
+    margin-top: 6px;
+    text-align: center;
+}
+img.img-portfolio{
+    width:100%;
+   
+}
+.display-mobile{
+    display: block;
+}
+}
